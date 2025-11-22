@@ -1,18 +1,3 @@
-const MEDIA_CONFIG = {
-    videos: [
-        'https://files.catbox.moe/slo1l0.mp4',
-        'https://files.catbox.moe/awoz6k.mp4',
-        'https://files.catbox.moe/mci2sn.mp4',
-        'https://files.catbox.moe/n1rtnl.mp4'
-    ],
-    images: [
-        'https://files.catbox.moe/fba87o.jpg',
-        'https://files.catbox.moe/u3itih.jpg',
-        'https://files.catbox.moe/j3ijr0.jpg'
-    ],
-    videoProbability: 0.4
-};
-
 const menuSections = {
     '✰ DESCARGAS ✰': [
         '#facebook + <url>',
@@ -115,7 +100,6 @@ ${sectionsText}
 }
 
 let handler = async (m, { conn }) => {
-    const { videos, images, videoProbability } = MEDIA_CONFIG;
     const userId = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.sender;
     const name = conn.getName(userId);
     const _uptime = process.uptime() * 1000;
@@ -128,62 +112,28 @@ let handler = async (m, { conn }) => {
         totalCommands: Object.values(global.plugins || {}).filter((v) => v.help && v.tags).length,
     };
 
-    const txt = buildMenuText(metrics);
-    
-    let messageOptions = {};
-    let selectedMediaUrl;
-    const useVideo = Math.random() < videoProbability && videos.length > 0;
+    const menuText = buildMenuText(metrics);
 
-    if (useVideo) {
-        selectedMediaUrl = videos[Math.floor(Math.random() * videos.length)];
-        messageOptions = {
-            video: { url: selectedMediaUrl },
-            gifPlayback: true, 
-            caption: txt,
-            mentions: [m.sender, userId] 
-        };
-    } else if (images.length > 0) {
-        selectedMediaUrl = images[Math.floor(Math.random() * images.length)];
-        
-        const channelId = global.canalIdM?.[0] || '120363420590235387@newsletter'; 
-        const channelName = 'Isagi - 𝖡𝗈𝗍';
-        
-        messageOptions = {
-            text: txt,
-            contextInfo: {
-                mentionedJid: [m.sender, userId],
-                isForwarded: false, 
-               forwardedNewsletterMessageInfo: { 
-                   newsletterJid: channelId,
-                   newsletterName: channelName,
-                   serverMessageId: -1, 
-                },
-                forwardingScore: 999,
-                externalAdReply: {
-                    title: global.botname || 'Tu Bot', 
-                    body: global.textbot || 'Bot de WhatsApp', 
-                    thumbnailUrl: selectedMediaUrl, 
-                    sourceUrl: global.redes || 'https://whatsapp.com/', 
-                    mediaType: 1, 
-                    showAdAttribution: false, 
-                    renderLargerThumbnail: true 
-                }
+    await conn.sendMessage(m.chat, {
+        text: menuText,
+        contextInfo: {
+            externalAdReply: {
+                title: global.canalNombreM?.[0] || 'Isagi - Bot',
+                body: 'Isagi bot',
+                thumbnailUrl: 'https://files.catbox.moe/fba87o.jpg',
+                sourceUrl: 'https://github.com/dev-fedexyzz',
+                mediaType: 1,
+                renderLargerThumbnail: true
+            },
+            mentionedJid: [m.sender, userId],
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: global.canalIdM?.[0] || '',
+                newsletterName: 'Isagi - 𝖡𝗈𝗍',
+                serverMessageId: -1
             }
-        };
-    } else {
-        messageOptions = {
-            text: txt,
-            mentions: [m.sender, userId]
-        };
-        console.warn("Advertencia: No se encontraron URLs en la configuración de medios. Enviando solo texto.");
-    }
-
-    try {
-        await conn.sendMessage(m.chat, messageOptions, { quoted: m });
-    } catch (error) {
-        console.error("Error al enviar el mensaje del menú (Intentando fallback a solo texto):", error);
-        await conn.reply(m.chat, `¡Error al intentar mostrar el menú con multimedia! \n\n${txt}`, m);
-    }
+        }
+    }, { quoted: m });
 };
 
 
