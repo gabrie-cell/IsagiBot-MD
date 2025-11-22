@@ -29,16 +29,17 @@ function buildMenuText({ name, botname, uptime, totalreg, totalCommands }) {
 ┃ 👑 *Activo:* ${uptime}
 ┃ 👥 *Usuarios:* ${totalreg}
 ┃ 📚 *Comandos:* ${totalCommands}
-┃ 📣 *Canal:* https://whatsapp.com/channel/0029VbAt0n3It5rv4WOUcH00
+┃ 📣 *Canal: .
+https://whatsapp.com/channel/0029Vb6nOKBD8SDp0aFtCD3R
 ╰━━━━━━━━━━━━━━━
 
-¿Quieres ser un sub bot?
-Utiliza *#qr* ó *#code*
+*¿Quieres ser un sub bot?
+Utiliza *#qr* ó *#code**
  
 ✦ Lista de comandos:
 ${sectionsText}
 
-> © Powered by Staff Mita Bot
+> © Powered by Staff isagi Bot
 `.trim();
 }
 
