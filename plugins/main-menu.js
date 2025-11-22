@@ -55,7 +55,7 @@ const menuSections = {
 };
 
 const PREFIX_SYMBOL = '🌵';
-const COMMAND_START = ''; 
+const COMMAND_START = '/'; 
 
 function clockString(ms) {
     if (isNaN(ms)) return '--:--:--';
@@ -95,7 +95,7 @@ Utiliza *#qr* ó *#code*
 ✦ Lista de comandos:
 ${sectionsText}
 
-> © Powered by Staff isagi Bot
+> © Powered by Staff Mita Bot
 `.trim();
 }
 
@@ -132,7 +132,7 @@ let handler = async (m, { conn }) => {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: global.canalIdM?.[0] || '',
-                newsletterName: 'Isagi - 𝖡𝗈𝗍',
+                newsletterName: 'IsagiBot - MD',
                 serverMessageId: -1
             }
         }
