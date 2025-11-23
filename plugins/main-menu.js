@@ -101,6 +101,8 @@ const menuSections = {
         '#update',
         '#p',
         '#creador',
+        '#banuser <@mencion>',
+        '#banlist',
     ],  
      '✦ ANIMES ✦': [
         '#slap  <@mencion>',
