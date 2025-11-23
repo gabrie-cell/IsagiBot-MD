@@ -36,7 +36,7 @@ END:VCARD`;
             },
             contextInfo: {
                 externalAdReply: {
-                    title: "© 2025–2025 Isagi Project",
+                    title: "© 2025–2025 yoichi Project",
                     body: "Contacta con el owner del bot.",
                     thumbnailUrl: "https://files.catbox.moe/12zb63.jpg",
                     mediaType: 1,
