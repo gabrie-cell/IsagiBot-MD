@@ -115,9 +115,16 @@ const menuSections = {
         '#lengua <@mencion>',
         '#bleh  <@mencion>',
         '#kiss <@mencion>',
-        '#',
-        '#',
-    ],
+        '#acurrucarse <@mencion>',
+        '#cuddle  <@mencion>',
+        '#cry
+        '#cafe
+        '#coffee
+
+
+
+
+   ],   
 
 
 };
