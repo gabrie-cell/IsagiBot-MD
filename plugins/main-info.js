@@ -16,10 +16,10 @@ const chatLabel = m.isGroup ? (await conn.getName(m.chat) || 'Grupal') : 'Privad
 const horario = `${moment.tz('America/Caracas').format('DD/MM/YYYY hh:mm:ss A')}`
 switch (command) {
 case 'suggest': case 'sug': {
-if (!text) return conn.reply(m.chat, '❀ Escribe la sugerencia que quieres enviar al propietario de la Bot.', m)
-if (text.length < 10) return conn.reply(m.chat, 'ꕥ La sugerencia debe tener más de 10 caracteres.', m)
+if (!text) return conn.reply(m.chat, '❀ *Escribe la sugerencia que quieres enviar al propietario de la Bot*.', m)
+if (text.length < 10) return conn.reply(m.chat, 'ꕥ *🎄La sugerencia debe tener más de 10 caracteres⛄*.', m)
 await m.react('🕒')
-const sug = `❀ 𝗦𝗨𝗚𝗘𝗥𝗘𝗡𝗖𝗜𝗔 𝗥𝗘𝗖𝗜𝗕𝗜𝗗𝗔\n\nꕥ *Usuario* » ${nombre}\n✩ *Tag* » ${tag}\n✿ *Sugerencia* » ${text}\n✦ *Chat* » ${chatLabel}\n✰ *Fecha* » ${horario}\n♤ *InfoBot* » ${botname} / ${vs}`
+const sug = `❀ 🎄𝗦𝗨𝗚𝗘𝗥𝗘𝗡𝗖𝗜𝗔 𝗥𝗘𝗖𝗜𝗕𝗜𝗗𝗔⛄\n\nꕥ *Usuario* » ${nombre}\n✩ *Tag* » ${tag}\n✿ *Sugerencia* » ${text}\n✦ *Chat* » ${chatLabel}\n✰ *Fecha* » ${horario}\n♤ *InfoBot* » ${botname} / ${vs}`
 await conn.sendMessage(`${suittag}@s.whatsapp.net`, { text: sug, mentions: [m.sender, ...usertag] }, { quoted: m })
 await m.react('✔️')
 m.reply('❀ La sugerencia ha sido enviada al desarrollador. Gracias por contribuir a mejorar nuestra experiencia.')
@@ -87,7 +87,7 @@ break
 }
 case 'script': case 'sc': {
 await m.react('🕒')
-const res = await fetch('https://api.github.com/repos/The-King-Destroy/Yuki_Suou-Bot')
+const res = await fetch('https://api.github.com/repos/gabrie-cell/pene-Bot')
 if (!res.ok) throw new Error('No se pudo obtener los datos del repositorio.')
 const json = await res.json()
 const txt = `*乂  S C R I P T  -  M A I N  乂*\n\n✩ *Nombre* : ${json.name}\n✩ *Visitas* : ${json.watchers_count}\n✩ *Peso* : ${(json.size / 1024).toFixed(2)} MB\n✩ *Actualizado* : ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n✩ *Url* : ${json.html_url}\n✩ *Forks* : ${json.forks_count}\n✩ *Stars* : ${json.stargazers_count}\n\n> *${dev}*`
