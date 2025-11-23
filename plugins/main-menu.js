@@ -58,7 +58,7 @@ const menuSections = {
         '#animedl',
     ],
     '✦ BÚSQUEDAS ✦': [
-        '#',
+        '#tiktoksearch + <texto>',
         '#',
         '#',
         '#',
