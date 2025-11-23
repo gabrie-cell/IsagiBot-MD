@@ -117,13 +117,13 @@ const menuSections = {
         '#kiss <@mencion>',
         '#acurrucarse <@mencion>',
         '#cuddle  <@mencion>',
-        '#cry
-        '#cafe
-        '#coffee
-        '#clap  <@mencion>
-        '#bored
-        '#aburrido
-        '#llorar  <@mencion>
+        '#cry',
+        '#cafe',
+        '#coffee',
+        '#clap  <@mencion>',
+        '#bored',
+        '#aburrido',
+        '#llorar  <@mencion>',
    ],   
 
 
