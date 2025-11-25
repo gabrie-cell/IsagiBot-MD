@@ -91,7 +91,7 @@ const menuSections = {
         '#qc',
         '#brat + <texto>',
         '#p',
-        '#cbx',
+        '#calculadora + <ejemplo 5+7',
         '#toghibli',
         '#inspeccionar + <url>',
         '#sc',
