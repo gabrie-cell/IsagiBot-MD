@@ -1,14 +1,14 @@
 import yts from 'yt-search'
 
 var handler = async (m, { text, conn, args, command, usedPrefix }) => {
-if (!text) return conn.reply(m.chat, `❀ Por favor, ingresa una búsqueda de Youtube.`, m)
+if (!text) return conn.reply(m.chat, `⛄ *Por favor, ingresa una búsqueda de Youtube*.`, m)
 try {
 await m.react('🕒')
 let results = await yts(text)
 let tes = results.all
 let teks = results.all.map(v => {
 switch (v.type) {
-case 'video': return `「✦」Resultados de la búsqueda para *<${text}>*
+case 'video': return `「✦」*Resultados de la búsqueda para* *<${text}>*
 
 ❀ *${v.title}*
 > ✦ Canal » *${v.author.name}*
