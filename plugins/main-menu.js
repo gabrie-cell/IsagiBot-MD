@@ -93,7 +93,7 @@ const menuSections = {
         '#p',
         '#cbx',
         '#toghibli',
-        '#imagedit',
+        '#inspeccionar + <url>',
         '#sc',
         '#hd',
     ],
