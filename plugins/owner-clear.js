@@ -8,7 +8,7 @@ unlinkSync(fullPath)
 totalDeleted++
 }}
 await m.react('✔️')
-conn.reply(m.chat, `❀ Listo, se eliminaron ${totalDeleted} archivos de las carpetas temporales.`, m)
+conn.reply(m.chat, `🪷 *Listo, se eliminaron ${totalDeleted} archivos de las carpetas temporales*.`, m)
 break
 }}} catch (err) {
 await m.react('✖️')
