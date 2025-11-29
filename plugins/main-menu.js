@@ -146,7 +146,7 @@ const menuSections = {
         '#',
 
 
-}
+]
 
 let handler = async (m, { conn }) => {
     const userId = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.sender;
