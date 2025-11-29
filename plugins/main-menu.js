@@ -88,7 +88,7 @@ const menuSections = {
         '#trabajar',
         '#minar',
         '#daily',
-        '#transferir',
+        '#cofre',
         '#banco',
         '#inventario',
         '#balance',
