@@ -1,4 +1,4 @@
-const PREFIX_SYMBOL = '🎄';
+const PREFIX_SYMBOL = '🪷';
 
 function clockString(ms) {
     if (isNaN(ms)) return '--:--:--';
@@ -130,7 +130,7 @@ const menuSections = {
         '#aburrido',
         '#llorar  <@mencion>',
     ],   
-     ' ✦  ECONOMIA ✦': [
+     '✦ ECONOMIA ✦': [
         '#baltop',
         '#',
         '#',
