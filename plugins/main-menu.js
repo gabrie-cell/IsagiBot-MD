@@ -85,18 +85,27 @@ const menuSections = {
     ],
     '✦ ECONOMIA ✦': [
         '#baltop',
-        '#crimen',
-        '#suerte',
-        '#cofre',
-        '#apostar',
-        '#curar',
-        '#mazmorra',
-        '#deposit',
-        '#Aventura',
+        '#trabajar',
+        '#minar',
         '#daily',
+        '#transferir',
+        '#banco',
+        '#inventario',
+        '#rank',
+        '#shop',
+        '#gamble',
         '#robar',
         '#apostar',
         '#lotería',
+        '#retirar',
+        '#semanal
+        '#robar
+        '#slut
+        '#slot
+        '#ruleta
+        '#pescar
+        '#pay
+        '#
     ],
 };
 
