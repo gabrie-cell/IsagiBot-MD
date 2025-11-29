@@ -105,7 +105,7 @@ const menuSections = {
         '#ruleta
         '#pescar
         '#pay
-        '#
+        '#cazar
     ],
 };
 
