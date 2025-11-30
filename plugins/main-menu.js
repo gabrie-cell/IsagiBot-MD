@@ -38,7 +38,7 @@ const menuSections = {
         '#promote',
         '#demote',
         '#kicknum',
-        '#setprimary',
+        '#pfp',
         '#tag',
         '#advertencia',
     ],
