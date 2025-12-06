@@ -5,7 +5,7 @@ FN:𝘋𝘦𝘷-Dani
 ORG:𝘋𝘦𝘷-Dani
 TITLE:Epictetus, Enchiridion — Chapter 1 (verse 1)
 EMAIL;type=INTERNET:doxeosjr@gmail.com 
-TEL;type=CELL;waid=51941247696:+51941247696
+TEL;type=CELL;waid=51941658192:+51941658192
 ADR;type=WORK:;;2-chōme-7-5 Fuchūchō;Izumi;Osaka;594-0071;Japan
 URL;type=WORK:https://www.instagram.com/DV G Dx
 X-WA-BIZ-NAME:I S A G I - Ｂｏｔ
