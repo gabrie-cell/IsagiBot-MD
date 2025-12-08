@@ -17,6 +17,7 @@ const menuSections = {
         '#pinterest + <texto>',
         '#google + <texto>',
         '#buscar4',
+        '#mercadolibre',
     ],
     '✦ CONFIGURACIÓN ✦': [
         '#antibot',
@@ -41,6 +42,7 @@ const menuSections = {
         '#pfp',
         '#tag',
         '#advertencia',
+        '#mute <@mencion>',
     ],
     '✦ TOOLS ✦': [
         '#s',
