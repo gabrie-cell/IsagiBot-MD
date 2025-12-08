@@ -52,6 +52,7 @@ const menuSections = {
         '#inspeccionar + <url>',
         '#wikipedia + <texto>',
         '#hd',
+        '#acertijo',
     ],
     '✦ OWNER ✦': [
         '#update',
