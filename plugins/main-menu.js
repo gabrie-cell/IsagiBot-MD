@@ -108,6 +108,7 @@ const menuSections = {
         '#ruleta',
         '#pescar',
         '#pay',
+    ],
     '✦ COMANDOS FUN ✦': [
         '#formarpareja5',
         '#formarparejas',
