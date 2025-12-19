@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
   const channel = 'https://whatsapp.com/channel/0029Vb6nOKBD8SDp0aFtCD3R' // ← tu canal real
 
   const dev = '💎 Creador: Gabriel ofc'
-  const catalogo = 'https://qu.ax/gPaYV.jpg' // o './media/grupos.jpg'
+  const catalogo = 'https://qu.ax/hzgtW' // o './media/grupos.jpg'
   const emojis = '😼'
 
   let grupos = `
