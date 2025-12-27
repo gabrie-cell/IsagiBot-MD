@@ -49,6 +49,8 @@ const menuSections = {
         '#creador',
         '#banned <@mencion>',
         '#banlist',
+        '#spam2',
+        '#salir',
     ],
     '✦ *ANIMES* ✦': [
         '#slap <@mencion>',
