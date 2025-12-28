@@ -29,6 +29,8 @@ const menuSections = {
         '#tag',
         '#advertencia',
         '#mute <@mencion>',
+        '#fantasmas',
+        '#kickfantasmas',
     ],
     '✦ *TOOLS* ✦': [
         '#s',
