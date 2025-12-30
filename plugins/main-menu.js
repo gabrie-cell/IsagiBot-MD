@@ -107,7 +107,8 @@ const menuSections = {
         '#formarparejas',
         '#doxear',
         '#top <texto>', 
-        '#grupos',       
+        '#grupos',  
+        '#dance <@mencion>',     
     ],
 };
 
