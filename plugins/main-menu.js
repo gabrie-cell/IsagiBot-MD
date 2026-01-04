@@ -1,5 +1,5 @@
 const menuSections = {
-    '✦ *DESCARGAS* ✦': [
+    '🌱 *DESCARGAS* 🌱': [
         '#facebook + <url>',
         '#play + <texto>',
         '#tiktok + <url>',
@@ -12,18 +12,18 @@ const menuSections = {
         '#play2 <texto>',
         '#capcut <url>',
     ],
-    '✦ *BÚSQUEDAS* ✦': [
+    '🌱 *BÚSQUEDAS* 🌱': [
         '#tiktoksearch + <texto>',
         '#pinterest + <texto>',
         '#google + <texto>',
         '#buscar4',
         '#mercadolibre',
     ],
-    '✦ *CONFIGURACIÓN* ✦': [
+    '🌱 *CONFIGURACIÓN🌱 ✦': [
         '#antilink',
         '#antispam',
     ],
-    '✦ *GRUPOS* ✦': [
+    '🌱 *GRUPOS* 🌱': [
         '#promote',
         '#demote',
         '#kicknum',
@@ -34,7 +34,7 @@ const menuSections = {
         '#fantasmas',
         '#kickfantasmas',
     ],
-    '✦ *TOOLS* ✦': [
+    '🌱 *TOOLS* 🌱': [
         '#s',
         '#qc',
         '#brat + <texto>',
@@ -47,7 +47,7 @@ const menuSections = {
         '#acertijo',
         '#syntax',
     ],
-    '✦ *OWNER* ✦': [
+    '🌱 *OWNER* 🌱': [
         '#update',
         '#p',
         '#creador',
@@ -56,7 +56,7 @@ const menuSections = {
         '#spam2',
         '#salir',
     ],
-    '✦ *ANIMES* ✦': [
+    '🌱 *ANIMES* 🌱': [
         '#slap <@mencion>',
         '#kill <@mencion>',
         '#morder <@mencion>',
@@ -79,7 +79,7 @@ const menuSections = {
         '#aburrido',
         '#llorar <@mencion>',
     ],
-    '✦ *ECONOMIA* ✦': [
+    '🌱 *ECONOMIA* 🌱': [
         '#baltop',
         '#trabajar',
         '#minar',
@@ -102,7 +102,7 @@ const menuSections = {
         '#pescar',
         '#pay',
     ],
-    '🌴 *COMANDOS FUN* 🌴': [
+    '🌱 *MENU FUN* 🌱': [
         '#formarpareja5',
         '#formarparejas',
         '#doxear',
