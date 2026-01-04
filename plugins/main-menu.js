@@ -158,8 +158,8 @@ function buildMenuText({ name, botname, uptime, totalreg, totalCommands }) {
 https://whatsapp.com/channel/0029Vb6nOKBD8SDp0aFtCD3R*
 ╰━━━━━━━━━━━━━━━
 
-¿*Quieres ser un sub bot?
-Utiliza* *#code*
+¿*quieres ser subbot*?
+*PIDE CODE* / *QR*
 
 *🌱 Lista de comandos*:
 ${sectionsText}
